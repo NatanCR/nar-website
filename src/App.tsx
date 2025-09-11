@@ -17,7 +17,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.PROD ? '/nar-website' : '/'}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/consulting" element={<Consulting />} />

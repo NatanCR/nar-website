@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 const Design = () => {
   const galleryImages = [
-    "/images/placeholder.svg",
-    "/images/placeholder.svg",
-    "/images/placeholder.svg",
+    "./images/placeholder.svg",
+    "./images/placeholder.svg",
+    "./images/placeholder.svg",
   ];
 
   return (

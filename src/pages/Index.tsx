@@ -9,14 +9,14 @@ const Index = () => {
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const carouselImages = [
-    "/images/placeholder.svg", // Wooden structure with plants
-    "/images/placeholder.svg", // Close-up of green leaves
-    "/images/placeholder.svg", // ORIGEO green wall
-    "/images/placeholder.svg", // Wooden beams with hanging plants
-    "/images/placeholder.svg", // Rooftop garden with plants
-    "/images/placeholder.svg", // Casa Andorinha sign with plants
-    "/images/placeholder.svg", // Green wall with neon lights
-    "/images/placeholder.svg", // Hanging plants in wooden structure
+    "./images/placeholder.svg", // Wooden structure with plants
+    "./images/placeholder.svg", // Close-up of green leaves
+    "./images/placeholder.svg", // ORIGEO green wall
+    "./images/placeholder.svg", // Wooden beams with hanging plants
+    "./images/placeholder.svg", // Rooftop garden with plants
+    "./images/placeholder.svg", // Casa Andorinha sign with plants
+    "./images/placeholder.svg", // Green wall with neon lights
+    "./images/placeholder.svg", // Hanging plants in wooden structure
   ];
 
   const nextSlide = () => {
@@ -38,17 +38,17 @@ const Index = () => {
 
   const servicePages = [
     {
-      image: "/images/placeholder.svg", // painel-lateral
+      image: "./images/placeholder.svg", // painel-lateral
       title: "Paredes verdes naturais",
       path: "/consulting",
     },
     {
-      image: "/images/placeholder.svg", // jardim-suspenso-lateral
+      image: "./images/placeholder.svg", // jardim-suspenso-lateral
       title: "Jardins pendentes",
       path: "/development",
     },
     {
-      image: "/images/placeholder.svg", // vaso-pequeno
+      image: "./images/placeholder.svg", // vaso-pequeno
       title: "Vasos e arranjos",
       path: "/design",
     },
