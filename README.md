@@ -27,6 +27,11 @@ npm run build:gh-pages
 3. Set source to "GitHub Actions"
 4. The workflow will automatically deploy on push to main
 
+**Important:** Make sure to enable the `github-pages` environment in your repository settings:
+- Go to Settings → Environments
+- Create a new environment called `github-pages`
+- This allows the deployment to work properly
+
 ## Configuration
 - Base path is automatically set to `/nar-website/` for production builds
 - Development server runs on `http://localhost:8080`
