@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 const Design = () => {
   const galleryImages = [
-    "./images/placeholder.svg",
-    "./images/placeholder.svg",
-    "./images/placeholder.svg",
+    "./images/vaso-arvore.jpeg",
+    "./images/vaso-pequeno.JPG",
+    "./images/vaso-decorativo.jpeg",
   ];
 
   return (
@@ -29,21 +29,20 @@ const Design = () => {
           Criamos decorações que equilibram estética, funcionalidade e bem-estar.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto">
           {galleryImages.map((image, index) => (
             <motion.div
-              key={image}
+              key={`design-${index}`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="group relative aspect-square overflow-hidden rounded-2xl"
+              className="group relative aspect-square overflow-hidden rounded-2xl flex-1"
             >
               <img
                 src={image}
                 alt={`Gallery image ${index + 1}`}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.div>
           ))}
         </div>

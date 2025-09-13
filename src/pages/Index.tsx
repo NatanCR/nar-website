@@ -9,14 +9,15 @@ const Index = () => {
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const carouselImages = [
-    "./images/placeholder.svg", // Wooden structure with plants
-    "./images/placeholder.svg", // Close-up of green leaves
-    "./images/placeholder.svg", // ORIGEO green wall
-    "./images/placeholder.svg", // Wooden beams with hanging plants
-    "./images/placeholder.svg", // Rooftop garden with plants
-    "./images/placeholder.svg", // Casa Andorinha sign with plants
-    "./images/placeholder.svg", // Green wall with neon lights
-    "./images/placeholder.svg", // Hanging plants in wooden structure
+    "./images/cenario-completo.jpg", // Wooden structure with plants
+    "./images/close-plantas.jpg", // Close-up of green leaves
+    "./images/construindo-parede.jpg", // ORIGEO green wall
+    "./images/jardim-pendente.jpg", // Wooden beams with hanging plants
+    "./images/telhado-plantas.jpg", // Rooftop garden with plants
+    "./images/vaso-grande-luzes.jpg", // Casa Andorinha sign with plants
+    "./images/painel-luzes.jpg", // Green wall with neon lights
+    "./images/painel-top.jpg",
+    "./images/vasos-transformacao.jpg",
   ];
 
   const nextSlide = () => {
@@ -38,17 +39,17 @@ const Index = () => {
 
   const servicePages = [
     {
-      image: "./images/placeholder.svg", // painel-lateral
+      image: "./images/painel-lateral.jpg", // painel-lateral
       title: "Paredes verdes naturais",
       path: "/consulting",
     },
     {
-      image: "./images/placeholder.svg", // jardim-suspenso-lateral
+      image: "./images/jardim-suspenso-lateral.jpg", // jardim-suspenso-lateral
       title: "Jardins pendentes",
       path: "/development",
     },
     {
-      image: "./images/placeholder.svg", // vaso-pequeno
+      image: "./images/vaso-pequeno.JPG", // vaso-pequeno
       title: "Vasos e arranjos",
       path: "/design",
     },
@@ -56,7 +57,7 @@ const Index = () => {
 
   const handleEmailContact = (e: React.MouseEvent) => {
     e.preventDefault();
-    window.location.href = "mailto:naridealize@gmail.com?subject=Contact%20Inquiry";
+    window.location.href = "mailto:naridealize@gmail.com?subject=Pedido%20de%20Orçamento";
   };
 
   return (
@@ -66,7 +67,7 @@ const Index = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("/images/placeholder.svg")',
+            backgroundImage: 'url("/images/painel-verde-grande-escuro.jpg")',
             backgroundSize: '120%', // Slightly zoomed in
             backgroundPosition: 'center',
             transition: 'background-size 0.3s ease-out',
@@ -106,7 +107,7 @@ const Index = () => {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <img
-            src="/images/placeholder.svg"
+            src="/images/jardim-pendente.jpg"
             alt="Landscaping Solutions"
             className="w-full h-full object-cover"
           />
@@ -231,7 +232,7 @@ const Index = () => {
             <div className="flex flex-col items-center text-center gap-12">
               <div className="w-24">
                 <img 
-                  src="/images/placeholder.svg" 
+                  src="/images/logoVerde.png" 
                   alt="NAR Idealize Logo" 
                   className="w-full h-auto"
                 />
