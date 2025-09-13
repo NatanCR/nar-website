@@ -67,7 +67,7 @@ const Index = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("./images/painel-verde-grande-escuro.jpg")',
+            backgroundImage: 'url("/images/painel-verde-grande-escuro.jpg")',
             backgroundSize: '120%', // Slightly zoomed in
             backgroundPosition: 'center',
             transition: 'background-size 0.3s ease-out',
@@ -107,7 +107,7 @@ const Index = () => {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <img
-            src="./images/jardim-pendente.jpg"
+            src="/images/jardim-pendente.jpg"
             alt="Landscaping Solutions"
             className="w-full h-full object-cover"
           />
@@ -232,7 +232,7 @@ const Index = () => {
             <div className="flex flex-col items-center text-center gap-12">
               <div className="w-24">
                 <img 
-                  src="./images/logoVerde.png" 
+                  src="/images/logoVerde.png" 
                   alt="NAR Idealize Logo" 
                   className="w-full h-auto"
                 />
