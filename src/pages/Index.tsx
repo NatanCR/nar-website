@@ -37,6 +37,17 @@ const Index = () => {
     return () => clearInterval(interval);
   }, []);
 
+  // Force image reloading when component mounts (fixes GitHub Pages issue)
+  useEffect(() => {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      if (img.src) {
+        const newSrc = img.src.split('?')[0] + '?t=' + Date.now();
+        img.src = newSrc;
+      }
+    });
+  }, []);
+
   const servicePages = [
     {
       image: "./images/painel-lateral.jpg", // painel-lateral

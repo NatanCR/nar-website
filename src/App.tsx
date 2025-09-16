@@ -19,7 +19,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter basename={import.meta.env.PROD ? '/nar-website/' : '/'}>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<Index key="home" />} />
           <Route path="/consulting" element={<Consulting />} />
           <Route path="/development" element={<Development />} />
           <Route path="/design" element={<Design />} />

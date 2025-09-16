@@ -7,8 +7,14 @@ const Development = () => {
   const navigate = useNavigate();
   
   const handleBackClick = () => {
-    // Force navigation to root with proper URL format
-    window.location.href = import.meta.env.PROD ? '/nar-website/' : '/';
+    // Use React Router navigation with proper URL handling
+    navigate('/', { replace: true });
+    // Force a small delay to ensure proper URL resolution
+    setTimeout(() => {
+      if (import.meta.env.PROD && !window.location.href.endsWith('/')) {
+        window.history.replaceState(null, '', window.location.href + '/');
+      }
+    }, 100);
   };
   
   const galleryImages = [
