@@ -13,22 +13,21 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => (
-  <h1 style={{ color: "red" }}>App is working!</h1>
-  // <QueryClientProvider client={queryClient}>
-  //   <TooltipProvider>
-  //     <Toaster />
-  //     <Sonner />
-  //     <BrowserRouter basename={import.meta.env.BASE_URL}>
-  //       <Routes>
-  //         <Route path="/" element={<Index key="home" />} />
-  //         <Route path="/consulting" element={<Consulting />} />
-  //         <Route path="/development" element={<Development />} />
-  //         <Route path="/design" element={<Design />} />
-  //         <Route path="*" element={<NotFound />} />
-  //       </Routes>
-  //     </BrowserRouter>
-  //   </TooltipProvider>
-  // </QueryClientProvider>
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
+        <Routes>
+          <Route path="/" element={<Index key="home" />} />
+          <Route path="/consulting" element={<Consulting />} />
+          <Route path="/development" element={<Development />} />
+          <Route path="/design" element={<Design />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
 );
 
 export default App;
