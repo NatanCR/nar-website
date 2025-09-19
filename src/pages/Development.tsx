@@ -18,9 +18,9 @@ const Development = () => {
   };
   
   const galleryImages = [
-    "./images/jardim-suspenso-distante.jpg",
-    "./images/planta-suspensa.jpeg",
-    "./images/jardim-suspenso.jpg",
+    "/images/jardim-suspenso-distante.jpg",
+    "/images/planta-suspensa.jpeg",
+    "/images/jardim-suspenso.jpg",
   ];
 
   return (

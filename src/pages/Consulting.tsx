@@ -18,9 +18,9 @@ const Consulting = () => {
   };
   
   const galleryImages = [
-    "./images/painel-lateral.jpg",
-    "./images/telhado-verde.jpeg",
-    "./images/painel-top.jpg",
+    "/images/painel-lateral.jpg",
+    "/images/telhado-verde.jpeg",
+    "/images/painel-top.jpg",
   ];
 
   return (

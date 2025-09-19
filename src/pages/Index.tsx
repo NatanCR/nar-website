@@ -9,15 +9,15 @@ const Index = () => {
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const carouselImages = [
-    "./images/cenario-completo.jpg", // Wooden structure with plants
-    "./images/close-plantas.jpg", // Close-up of green leaves
-    "./images/construindo-parede.jpg", // ORIGEO green wall
-    "./images/jardim-pendente.jpg", // Wooden beams with hanging plants
-    "./images/telhado-plantas.jpg", // Rooftop garden with plants
-    "./images/vaso-grande-luzes.jpg", // Casa Andorinha sign with plants
-    "./images/painel-luzes.jpg", // Green wall with neon lights
-    "./images/painel-top.jpg",
-    "./images/vasos-transformacao.jpg",
+    "/images/cenario-completo.jpg", // Wooden structure with plants
+    "/images/close-plantas.jpg", // Close-up of green leaves
+    "/images/construindo-parede.jpg", // ORIGEO green wall
+    "/images/jardim-pendente.jpg", // Wooden beams with hanging plants
+    "/images/telhado-plantas.jpg", // Rooftop garden with plants
+    "/images/vaso-grande-luzes.jpg", // Casa Andorinha sign with plants
+    "/images/painel-luzes.jpg", // Green wall with neon lights
+    "/images/painel-top.jpg",
+    "/images/vasos-transformacao.jpg",
   ];
 
   const nextSlide = () => {
@@ -50,17 +50,17 @@ const Index = () => {
 
   const servicePages = [
     {
-      image: "./images/painel-lateral.jpg", // painel-lateral
+      image: "/images/painel-lateral.jpg", // painel-lateral
       title: "Paredes verdes naturais",
       path: "/consulting",
     },
     {
-      image: "./images/jardim-suspenso-lateral.jpg", // jardim-suspenso-lateral
+      image: "/images/jardim-suspenso-lateral.jpg", // jardim-suspenso-lateral
       title: "Jardins pendentes",
       path: "/development",
     },
     {
-      image: "./images/vaso-pequeno.JPG", // vaso-pequeno
+      image: "/images/vaso-pequeno.JPG", // vaso-pequeno
       title: "Vasos e arranjos",
       path: "/design",
     },
@@ -78,7 +78,7 @@ const Index = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("./images/painel-verde-grande-escuro.jpg")',
+            backgroundImage: 'url("/images/painel-verde-grande-escuro.jpg")',
             backgroundSize: '120%', // Slightly zoomed in
             backgroundPosition: 'center',
             transition: 'background-size 0.3s ease-out',
@@ -118,7 +118,7 @@ const Index = () => {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <img
-            src="./images/jardim-pendente.jpg"
+            src="/images/jardim-pendente.jpg"
             alt="Landscaping Solutions"
             className="w-full h-full object-cover"
           />
@@ -243,7 +243,7 @@ const Index = () => {
             <div className="flex flex-col items-center text-center gap-12">
               <div className="w-24">
                 <img 
-                  src="./images/logoVerde.png" 
+                  src="/images/logoVerde.png" 
                   alt="NAR Idealize Logo" 
                   className="w-full h-auto"
                 />

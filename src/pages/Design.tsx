@@ -18,9 +18,9 @@ const Design = () => {
   };
   
   const galleryImages = [
-    "./images/vaso-arvore.jpeg",
-    "./images/vaso-pequeno.JPG",
-    "./images/vaso-decorativo.jpeg",
+    "/images/vaso-arvore.jpeg",
+    "/images/vaso-pequeno.JPG",
+    "/images/vaso-decorativo.jpeg",
   ];
 
   return (
