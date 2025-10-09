@@ -45,9 +45,9 @@ src/
 ├── lib/                    # Utility functions
 ├── pages/                  # Route components
 │   ├── Index.tsx          # Homepage with hero and services
-│   ├── Consulting.tsx     # Green walls service page
-│   ├── Development.tsx    # Hanging gardens service page
-│   ├── Design.tsx         # Pots and arrangements page
+│   ├── ParedesVerdes.tsx  # Green walls service page
+│   ├── JardinsPendentes.tsx # Hanging gardens service page
+│   ├── Vasos.tsx          # Pots and arrangements page
 │   └── NotFound.tsx       # 404 error page
 ├── App.tsx                # Main app component with routing
 └── main.tsx               # Application entry point

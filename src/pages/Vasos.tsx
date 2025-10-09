@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 
-const Development = () => {
+const Vasos = () => {
   const navigate = useNavigate();
   
   // Scroll to top when component mounts
@@ -24,9 +24,9 @@ const Development = () => {
   };
   
   const galleryImages = [
-    "/images/jardim-suspenso-distante.jpg",
-    "/images/planta-suspensa.jpeg",
-    "/images/jardim-suspenso.jpg",
+    "/images/vaso-arvore.jpeg",
+    "/images/vaso-pequeno.JPG",
+    "/images/vaso-decorativo.jpeg",
   ];
 
   return (
@@ -40,18 +40,18 @@ const Development = () => {
           Voltar
         </button>
         <h1 className="text-5xl md:text-7xl font-display font-bold mb-8">
-          Jardins pendentes
+          Vasos e arranjos
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mb-16">
-          Jardins pendentes com plantas vivas que valorizam o ambiente com leveza e sofisticação.
-          Cada espécie é escolhida de forma estratégica para combinar com o espaço e o evento.
-          Indicados para projetos temporários ou duradouros, com possibilidade de manutenção especial.
+          Trabalhamos com vasos decorativos pequenos, médios e grandes para ambientes internos e externos.
+          Cada peça é escolhida para valorizar o espaço com elegância e naturalidade.
+          Criamos decorações que equilibram estética, funcionalidade e bem-estar.
         </p>
 
         <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto">
           {galleryImages.map((image, index) => (
             <motion.div
-              key={`development-${index}`}
+              key={`vasos-${index}`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
@@ -70,4 +70,4 @@ const Development = () => {
   );
 };
 
-export default Development;
+export default Vasos;

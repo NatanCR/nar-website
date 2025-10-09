@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 
-const Design = () => {
+const ParedesVerdes = () => {
   const navigate = useNavigate();
   
   // Scroll to top when component mounts
@@ -24,9 +24,9 @@ const Design = () => {
   };
   
   const galleryImages = [
-    "/images/vaso-arvore.jpeg",
-    "/images/vaso-pequeno.JPG",
-    "/images/vaso-decorativo.jpeg",
+    "/images/painel-lateral.jpg",
+    "/images/telhado-verde.jpeg",
+    "/images/painel-top.jpg",
   ];
 
   return (
@@ -40,18 +40,18 @@ const Design = () => {
           Voltar
         </button>
         <h1 className="text-5xl md:text-7xl font-display font-bold mb-8">
-          Vasos e arranjos
+          Paredes verdes naturais
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mb-16">
-          Trabalhamos com vasos decorativos pequenos, médios e grandes para ambientes internos e externos.
-          Cada peça é escolhida para valorizar o espaço com elegância e naturalidade.
-          Criamos decorações que equilibram estética, funcionalidade e bem-estar.
+          Transformamos ambientes e eventos com painéis verdes naturais.
+          Trabalhamos com plantas naturais selecionadas para garantir qualidade e impacto visual.
+          Soluções paisagísticas eficientes, elegantes e sob medida para cada projeto.
         </p>
 
         <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto">
           {galleryImages.map((image, index) => (
             <motion.div
-              key={`design-${index}`}
+              key={`paredes-verdes-${index}`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
@@ -70,4 +70,4 @@ const Design = () => {
   );
 };
 
-export default Design;
+export default ParedesVerdes;

@@ -57,17 +57,17 @@ const Index = () => {
     {
       image: "/images/painel-lateral.jpg", // painel-lateral
       title: "Paredes verdes naturais",
-      path: "/consulting",
+      path: "/paredes-verdes",
     },
     {
       image: "/images/jardim-suspenso-lateral.jpg", // jardim-suspenso-lateral
       title: "Jardins pendentes",
-      path: "/development",
+      path: "/jardins-pendentes",
     },
     {
       image: "/images/vaso-pequeno.JPG", // vaso-pequeno
       title: "Vasos e arranjos",
-      path: "/design",
+      path: "/vasos",
     },
   ];
 

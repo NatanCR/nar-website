@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 
-const Consulting = () => {
+const JardinsPendentes = () => {
   const navigate = useNavigate();
   
   // Scroll to top when component mounts
@@ -24,9 +24,9 @@ const Consulting = () => {
   };
   
   const galleryImages = [
-    "/images/painel-lateral.jpg",
-    "/images/telhado-verde.jpeg",
-    "/images/painel-top.jpg",
+    "/images/jardim-suspenso-distante.jpg",
+    "/images/planta-suspensa.jpeg",
+    "/images/jardim-suspenso.jpg",
   ];
 
   return (
@@ -40,18 +40,18 @@ const Consulting = () => {
           Voltar
         </button>
         <h1 className="text-5xl md:text-7xl font-display font-bold mb-8">
-          Paredes verdes naturais
+          Jardins pendentes
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mb-16">
-          Transformamos ambientes e eventos com painéis verdes naturais.
-          Trabalhamos com plantas naturais selecionadas para garantir qualidade e impacto visual.
-          Soluções paisagísticas eficientes, elegantes e sob medida para cada projeto.
+          Jardins pendentes com plantas vivas que valorizam o ambiente com leveza e sofisticação.
+          Cada espécie é escolhida de forma estratégica para combinar com o espaço e o evento.
+          Indicados para projetos temporários ou duradouros, com possibilidade de manutenção especial.
         </p>
 
         <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto">
           {galleryImages.map((image, index) => (
             <motion.div
-              key={`consulting-${index}`}
+              key={`jardins-pendentes-${index}`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
@@ -70,4 +70,4 @@ const Consulting = () => {
   );
 };
 
-export default Consulting;
+export default JardinsPendentes;
