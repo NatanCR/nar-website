@@ -9,6 +9,7 @@ import ParedesVerdes from "./pages/ParedesVerdes";
 import JardinsPendentes from "./pages/JardinsPendentes";
 import Vasos from "./pages/Vasos";
 import NotFound from "./pages/NotFound";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,8 @@ const App = () => (
           <Route path="/vasos" element={<Vasos />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        {/* WhatsApp floating button - appears on all pages */}
+        <WhatsAppButton />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

@@ -262,7 +262,7 @@ const Index = () => {
                   naridealize@gmail.com
                 </a>
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+5511952750824"
                   className="flex items-center gap-2 hover:text-white/80 transition-colors"
                 >
                   <Phone className="w-5 h-5" />
