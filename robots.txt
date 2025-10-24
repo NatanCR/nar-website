@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://naridealize.com.br/sitemap.xml
