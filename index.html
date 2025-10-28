@@ -12,6 +12,21 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- SPA GitHub Pages URL rewrite script -->
+    <!-- This script handles deep linking for GitHub Pages by rewriting URLs like /?/route to /route -->
+    <script>
+      (function (l) {
+        // If URL is "/?/some-route?query#hash", rewrite to "/some-route?query#hash"
+        if (l.search && l.search.length > 1 && l.search[1] === "/") {
+          var decoded = l.search.slice(1);
+          var parts = decoded.split("?");
+          var path = parts[0].replace(/^\/\//, "/");
+          var query = parts.length > 1 ? "?" + parts.slice(1).join("?") : "";
+          var newUrl = path + query + l.hash;
+          window.history.replaceState(null, null, newUrl);
+        }
+      })(window.location);
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

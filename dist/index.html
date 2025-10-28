@@ -7,10 +7,27 @@
     <link rel="apple-touch-icon" href="./symbolNAR.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NAR Idealize - Soluções Paisagísticas</title>
-    <script type="module" crossorigin src="./assets/index-CMGMNJBo.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BUooonfL.css">
+    <!-- Font Awesome for WhatsApp icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script type="module" crossorigin src="./assets/index-D5qXkoar.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CAjyYLgr.css">
   </head>
   <body>
     <div id="root"></div>
+    <!-- SPA GitHub Pages URL rewrite script -->
+    <!-- This script handles deep linking for GitHub Pages by rewriting URLs like /?/route to /route -->
+    <script>
+      (function (l) {
+        // If URL is "/?/some-route?query#hash", rewrite to "/some-route?query#hash"
+        if (l.search && l.search.length > 1 && l.search[1] === "/") {
+          var decoded = l.search.slice(1);
+          var parts = decoded.split("?");
+          var path = parts[0].replace(/^\/\//, "/");
+          var query = parts.length > 1 ? "?" + parts.slice(1).join("?") : "";
+          var newUrl = path + query + l.hash;
+          window.history.replaceState(null, null, newUrl);
+        }
+      })(window.location);
+    </script>
   </body>
 </html>
